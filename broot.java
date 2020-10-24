@@ -8,12 +8,6 @@ public class broot {
     };
 
     public static void main(String[] args) {
-        // System.out.println("Исходная строка:\t" + "Напечатать");
-        // System.out.println("Хеш исходной строки:\t" + HashFunc("авыйтидъ"));
-        // System.out.println("Зловредная строка:\t" + "Выйти");
-        // System.out.println("Зловредная строка c подобранным окончание и началом:\t" + colis_first("Напечатать","Выйти"));
-        // System.out.println("Хеш модифицированной зловредной строки:\t" + HashFunc(colis_first("Напечатать","Выйти")));
-        // System.out.println(colis_first("Напечатать","Выйти"));
         String source = "лол,лиёл,лкдл,аяжа";
         System.out.println(source);
         System.out.println(HashFunc(source));
