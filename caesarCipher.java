@@ -1,11 +1,6 @@
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 public class caesarCipher {
-   
-
-    private static String encode(String source, int key){
+  
+    public static String encode(String source, int key){
         String alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
         char[] sourceChars = source.toLowerCase().toCharArray();
         for(int i = 0; i < sourceChars.length; i++){
@@ -19,7 +14,7 @@ public class caesarCipher {
         return String.valueOf(sourceChars);
     }
 
-    private static String decode(String source, int key){
+    public static String decode(String source, int key){
         String alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
         char[] sourceChars = source.toLowerCase().toCharArray();
         for(int i = 0; i < sourceChars.length; i++){
@@ -37,12 +32,4 @@ public class caesarCipher {
         return String.valueOf(sourceChars);
     }
 
-    private static String readFile(String filePath) {
-        try {
-            return new String(Files.readAllBytes( Paths.get(filePath)));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 }
