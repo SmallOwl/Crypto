@@ -1,3 +1,5 @@
+package Лабораторные;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +19,7 @@ public class simpleGenerate {
     }
 
     //Тест Миллера-Рабина на составные числа
-    private static boolean checkSimpleMillerRabin(BigInteger checkInt, int iterrations){
+    public static boolean checkSimpleMillerRabin(BigInteger checkInt, int iterrations){
         int s = 0;
         BigInteger t = checkInt.subtract(BigInteger.valueOf(1));
         while(t.mod(BigInteger.valueOf(2)).equals(BigInteger.valueOf(0))){
@@ -46,7 +48,7 @@ public class simpleGenerate {
     }
 
     //Деление большого случайного числа на маленькие простые числа
-    private static boolean checkBigIntegerModSimple(BigInteger checkInt, int maxSimple){
+    public static boolean checkBigIntegerModSimple(BigInteger checkInt, int maxSimple){
         for (Integer smallSimple : getListOfSimple(maxSimple)) {
             if(checkInt.mod(BigInteger.valueOf(smallSimple)).equals(BigInteger.valueOf(0))){
                 return false;

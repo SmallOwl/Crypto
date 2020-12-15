@@ -1,3 +1,5 @@
+package Практики;
+
 public class broot {
 
     private static char [] alphabet = new char[]{

@@ -1,6 +1,8 @@
+package Лабораторные;
+
 import java.math.BigInteger;
 
-public class dh {
+public class Лабораторная2 {
     
     public static void main(String[] args){
         BigInteger g;

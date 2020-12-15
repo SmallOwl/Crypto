@@ -1,4 +1,6 @@
-public class hash{ 
+package Практики;
+
+public class hash {
       
     public static void main(String args[]){
         String sourceA = "Try it a";
